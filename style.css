@@ -1,0 +1,144 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #F8FAFB;
+    font-weight: 400;
+    min-height: 100vh;
+}
+
+
+
+.new-sidebar{
+    position: fixed;
+    left: 0px;
+    top: 150px;
+    background-color: #794EDA;
+    bottom: 20px;
+    width: 70px;
+    border-left: 5px solid #F8FAFB;
+    border-radius: 10px;
+    box-sizing: initial;
+    transition: width .5s;
+    overflow: hidden;
+    z-index: 999;
+}
+.expand{
+    width: 250px;
+}
+.new-sidebar ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 30px;
+}
+.new-sidebar ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.new-sidebar ul .active{
+    background-color: #F8FAFB;
+    border-radius: 20px 0 0 20px;
+    color: #000;
+}
+.new-sidebar ul .active a{
+    color: #000 !important;
+}
+.new-sidebar ul li a{
+    position: relative;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+}
+.new-sidebar ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    min-height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.new-sidebar ul li a .title{
+    position: relative;
+    padding-left: 20px;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+/* header */
+.new-dash-header{
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+.new-dash-header .header-container{
+    max-width: 90%;
+    margin: auto;
+}
+
+
+
+/* gretings */
+.gretings{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.gretings img{
+    height: 50px;
+}
+.gretings .text{
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+.new-dash-header .link-itmes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.new-dash-header .link-itmes a{
+    text-decoration: none !important;
+    color: #000 !important;
+    margin-right: 30px;
+}
+.content{
+    max-width: 80%;
+    margin: auto;
+}
+.landing-box{
+    padding: 20px;
+    border-radius: 20px;
+}
+.landing-box .box-body{
+    padding: 50px 20px;
+    text-align: center;
+}
+.landing-box .procced-btn{
+    text-align: center;
+}
+.landing-box .procced-btn .btn{
+    background-color: #794EDA;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 20px;
+}
+.landing-box .title{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+.landing-box .title p{
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+#dashborad-toogle-btn{
+    position: fixed;
+    left: 10px;
+    font-size: 25px;
+    top: 100px;
+    cursor: pointer;
+}
