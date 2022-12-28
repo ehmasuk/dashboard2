@@ -79,9 +79,62 @@ body{
     max-width: 90%;
     margin: auto;
 }
-
-
-
+.new-dash-header .link-itmes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.new-dash-header .link-itmes a{
+    text-decoration: none !important;
+    color: #000 !important;
+    margin-right: 30px;
+}
+.new-dash-header .link-itmes .user-img-wraper{
+    position: relative;
+    cursor: pointer;
+}
+.new-dash-header .link-itmes .upgrade-btn{
+    border: 1px solid #794EDA;
+    padding: 3px 10px;
+    color: #794EDA;
+}
+.new-dash-header .link-itmes .user-img-wraper img{
+    height: 40px;
+    object-fit: cover;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #794EDA;
+    margin-right: 5px;
+}
+.user-img-wraper .drop-inner{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    min-width: 230px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow:1px 1px 5px rgba(153, 153, 153, 0.7);
+    display: none;
+    padding: 5px;
+    z-index: 999;
+}
+.user-img-wraper .drop-inner a{
+    display: block;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+.user-img-wraper .drop-inner i{
+    width: 30px;
+}
+.user-img-wraper .drop-inner a:hover{
+    background-color: #794EDA;
+    color: #fff !important;
+}
+.new-dash-header .link-itmes .user-img-wraper:hover>.drop-inner{
+    display: block;
+}
 /* gretings */
 .gretings{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -94,21 +147,12 @@ body{
     line-height: 40px;
     margin-bottom: 0;
 }
-.new-dash-header .link-itmes{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.new-dash-header .link-itmes a{
-    text-decoration: none !important;
-    color: #000 !important;
-    margin-right: 30px;
-}
+
 .content{
     max-width: 80%;
     margin: auto;
 }
-/* .landing-box{
+.landing-box{
     padding: 20px;
     border-radius: 20px;
 }
@@ -134,7 +178,7 @@ body{
     font-size: 20px;
     margin-bottom: 0;
     font-weight: 500;
-} */
+}
 #dashborad-toogle-btn{
     position: fixed;
     left: 10px;
