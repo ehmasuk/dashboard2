@@ -144,7 +144,7 @@ body{
 .landing-box-wraper{
     position: relative;
 }
-.landing-box-wraper::after{
+/* .landing-box-wraper::after{
     content: '';
     height: 80%;
     width: 100%;
@@ -154,7 +154,7 @@ body{
     top: 25%;
     z-index: -1;
     border-radius: 30px;
-}
+} */
 .landing-infos p{
     margin-bottom: 5px;
 }
