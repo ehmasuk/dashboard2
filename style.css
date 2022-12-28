@@ -135,6 +135,37 @@ body{
 .new-dash-header .link-itmes .user-img-wraper:hover>.drop-inner{
     display: block;
 }
+.landing-infos{
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    color: #000;
+}
+.landing-box-wraper{
+    position: relative;
+}
+.landing-box-wraper::after{
+    content: '';
+    height: 80%;
+    width: 100%;
+    background-color: #F4E2E2;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    z-index: -1;
+    border-radius: 30px;
+}
+.landing-infos p{
+    margin-bottom: 5px;
+}
+.landing-infos .title{
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+.landing-infos .point i{
+    color: #000;
+}
 /* gretings */
 .gretings{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -155,6 +186,7 @@ body{
 .landing-box{
     padding: 20px;
     border-radius: 20px;
+    margin-top: 50px;
 }
 .landing-box .box-body{
     padding: 50px 20px;
