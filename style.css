@@ -4,13 +4,17 @@ body{
     font-weight: 400;
     min-height: 100vh;
 }
-
+.content{
+    max-width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
 
 /* sidebar */
 .new-sidebar{
     position: fixed;
     left: 0px;
-    top: 150px;
+    top: 120px;
     background-color: #794EDA;
     bottom: 20px;
     width: 70px;
@@ -59,8 +63,8 @@ body{
     position: relative;
     display: block;
     min-width: 60px;
-    min-height: 60px;
-    line-height: 60px;
+    min-height: 70px;
+    line-height: 70px;
     text-align: center;
 }
 .new-sidebar ul li a .icon img{
@@ -76,8 +80,47 @@ body{
     padding-left: 10px;
     display: block;
     height: 60px;
-    line-height: 60px;
+    line-height: 70px;
 }
+
+/* sidebar curve */
+.new-sidebar ul .active b:nth-child(1){
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background-color: #F8FAFB;
+}
+.new-sidebar ul .active b:nth-child(1)::before{
+    content: '';
+    left: 0;
+    top:0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #794EDA;
+    border-radius: 0 0 20px 0;
+}
+.new-sidebar ul .active b:nth-child(2){
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background-color: #F8FAFB;
+}
+.new-sidebar ul .active b:nth-child(2)::before{
+    content: '';
+    left: 0;
+    top:0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #794EDA;
+    border-radius: 0 20px 0 0;
+}
+
+
+
 
 
 /* header */
@@ -190,10 +233,6 @@ body{
     margin-bottom: 0;
 }
 
-.content{
-    max-width: 80%;
-    margin: auto;
-}
 .landing-box{
     padding: 20px;
     border-radius: 20px;
@@ -226,6 +265,147 @@ body{
     position: fixed;
     left: 10px;
     font-size: 25px;
-    top: 100px;
+    top: 88px;
     cursor: pointer;
+}
+
+
+/* startup page slider */
+.landing-video-carousel{
+    background-color: #F4E2E2;
+    margin-top: 70px;
+    padding: 30px;
+}
+.landing-video-carousel .keywords span{
+    border: 1px solid #794EDA;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #794EDA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.landing-video-carousel .keywords .key-active{
+    background-color: #794EDA;
+    color: #fff;
+    font-weight: 500;
+}
+.landing-video-carousel .owl-nav,
+.landing-video-carousel .owl-dots{
+    display: none;
+}
+.single-amazing{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.single-amazing .cover-img{
+    max-height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.single-amazing .price span{
+    color: #928FAA;
+    margin-left: 3px;
+}
+.single-amazing .head{
+    font-weight: 700;
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 5px;
+    margin: 10px 0;
+}
+.single-amazing .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.single-amazing .price b{
+    color: #794EDA;
+    font-size: 20px;
+}
+.single-amazing .price p{
+    color: #0A033C;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.single-amazing .price p img{
+    margin-top: -6px;
+    margin-right: 8px;
+    width: 20px;
+    display: inline-block;
+}
+
+
+
+
+
+/* mini price */
+.mini-price{
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    position: absolute;
+    right: 10%;
+    top: 82px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.mini-price .fa-caret-up{
+    position: absolute;
+    right: 10%;
+    top: -27px;
+    font-size: 40px;
+    color: rgba(244, 106, 214, 0.5);
+}
+.show{
+    display: block !important;
+}
+.hide{
+    display: none !important;
+}
+.mini-price-single{
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid rgba(244, 106, 214, 0.1);
+}
+.mini-price-single:hover{
+    background-color: rgba(244, 106, 214, 0.1);
+}
+.mini-price-single .head{
+    font-weight: 700;
+    color: #F46AD6;
+}
+.mini-price-single p{
+    font-size: 24px;
+}
+.mini-price-single .title{
+    font-weight: 300;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+.mini-price-single .price{
+    font-family: 'Gelasio', serif;
+}
+.mini-price-single .price-btn{
+    font-family: 'Roboto', sans-serif;
+    background: rgba(76, 73, 228, 0.81);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+}
+.mini-price-single .detail{
+    margin: 15px 0 0 0;
+    cursor: pointer;
+    font-family: 'Gelasio', serif;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
 }
