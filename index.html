@@ -183,14 +183,14 @@
                     <div class="col-md-3">
                         <div class="landing-box" style="background-color: #FFB2B2;">
                             <div class="title">
-                                <p>Script to video</p>
+                                <p>Escribir una novela</p>
                                 <img src="img/briefcase.png" alt="" class="img-fluid">
                             </div>
                             <div class="box-body">
-                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, incidunt!</p>
+                                <p class="mb-0">Escribe una historia emocionante con las increíbles herramientas que la escuela pone a tu disposición.</p>
                             </div>
                             <div class="procced-btn">
-                                <button class="btn">Procced</button>
+                                <button class="btn">Seleccionar</button>
                             </div>
                         </div>
                         <div class="landing-infos">
@@ -211,7 +211,7 @@
                                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, incidunt!</p>
                             </div>
                             <div class="procced-btn">
-                                <button class="btn">Procced</button>
+                                <button class="btn">Seleccionar</button>
                             </div>
                         </div>
                         <div class="landing-infos">
@@ -232,7 +232,7 @@
                                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, incidunt!</p>
                             </div>
                             <div class="procced-btn">
-                                <button class="btn">Procced</button>
+                                <button class="btn">Seleccionar</button>
                             </div>
                         </div>
                         <div class="landing-infos">
@@ -262,6 +262,22 @@
                             <p class="point"> <i class="fa fa-check mr-1"></i> <span>Become a writer</span></p>
                             <p class="point"> <i class="fa fa-check mr-1"></i> <span>Coatching video</span></p>
                             <p class="point"> <i class="fa fa-check mr-1"></i> <span>Step by step guides</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="affiliate-bar">
+                    <div class="wraper">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-2 p-0">
+                                <img src="img/aff.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-7">
+                                <b>¡Aprende y GANA!</b>
+                                <p>Recomienda a una amiga para obtener un 10% de descuento con un montón de BONUS</p>
+                            </div>
+                            <div class="col-md-3 text-center p-0">
+                                <button class="btn affiliate-btn">Avanzar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -378,6 +394,32 @@
                 </div>
             </div>
         </div>
+        <!-- payment popup -->
+        <div class="latest-payement-popup-wraper">
+            <div class="latest-payment-popup">
+                <h1>Desbloquea Todas Las Funciones Y Comienza A Usarlas En Menos De 60 Segundos</h1>
+                <div class="pop">
+                    <i class="fas fa-times"></i>
+                    <div class="radio">
+                        <div class="single-option">
+                            <p class="title">Pequeñas empresas - Mensual</p>
+                            <p class="per">$20 <span>Ahorra 70%</span></p>
+                            <p class="des">Prueba de 7 días gratis, libre de riesgo</p>
+                            <p class="des">Cancela cuando quieras</p>
+                        </div>
+                    </div>
+                    <form action="">
+                        <label class="head" for="">Ingresa tu tarjeta de crédito o débito</label>
+                        <input type="text">
+                        <input type="submit" class="submit-btn" value="Empezar mi prueba gratis">
+                    </form>
+                    <div class="c-right">
+                        Actualizandote a la versión superior, aceptas 
+                        <a href="#">Política de privacidad</a> y <a href="#">Términos y condiciones.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -450,10 +492,12 @@
         })
     }
 
+    document.querySelector('#dashborad-toogle-btn').addEventListener('click',()=>{
+        document.querySelector('.new-sidebar').classList.toggle('expand');
+    });
 
     // landing carousel keyword
     const keyButton = document.querySelectorAll('.landing-video-carousel .keywords span');
-
 
     for(let i=0; i<keyButton.length; i++){
         keyButton[i].addEventListener('click',(e)=>{
@@ -461,20 +505,20 @@
         })
     }
 
-
-
-
-
-    document.querySelector('#dashborad-toogle-btn').addEventListener('click',()=>{
-        document.querySelector('.new-sidebar').classList.toggle('expand');
-    });
-
-
     // upgrade button 
     let a = document.querySelector('.upgrade-btn');
     a.addEventListener('click',()=>{
         document.querySelector('.mini-price').classList.toggle('show');
     })
+
+
+    // payment popup open
+    const popShow = ()=>{
+                document.querySelector('.latest-payement-popup-wraper').style.cssText = "display:block";
+                document.querySelector('.latest-payement-popup-wraper i').addEventListener('click',()=>{
+                    document.querySelector('.latest-payement-popup-wraper').style.cssText = "display:none";
+                })
+            }
 
 </script>
 
