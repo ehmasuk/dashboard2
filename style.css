@@ -190,7 +190,7 @@ body{
     display: block;
 }
 .landing-infos{
-    max-width: fit-content;
+    padding-left: 10px;
     margin: auto;
     margin-top: 20px;
     color: #000;
@@ -237,10 +237,14 @@ body{
     padding: 20px;
     border-radius: 20px;
     margin-top: 50px;
+    min-height: 280px;
 }
 .landing-box .box-body{
-    padding: 50px 0;
+    min-height: 170px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .landing-box .procced-btn{
     text-align: center;
@@ -278,20 +282,16 @@ body{
     border-radius: 10px;
 }
 .landing-video-carousel .keywords span{
-    border: 1px solid #794EDA;
-    border-radius: 10px;
     padding: 5px 10px;
     display: inline-block;
     margin-right: 10px;
     cursor: pointer;
-    color: #794EDA;
+    font-weight: 600;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 .landing-video-carousel .keywords .key-active{
-    background-color: #794EDA;
-    color: #fff;
-    font-weight: 500;
+    color: #794EDA;
 }
 .landing-video-carousel .owl-nav,
 .landing-video-carousel .owl-dots{
@@ -320,27 +320,6 @@ body{
     color: #000;
     margin-bottom: 5px;
     margin: 10px 0;
-}
-.single-amazing .price{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.single-amazing .price b{
-    color: #794EDA;
-    font-size: 20px;
-}
-.single-amazing .price p{
-    color: #0A033C;
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 0;
-}
-.single-amazing .price p img{
-    margin-top: -6px;
-    margin-right: 8px;
-    width: 20px;
-    display: inline-block;
 }
 
 
