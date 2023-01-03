@@ -204,11 +204,7 @@ body{
 .landing-single-box4{
     display: none;
 }
-.landing-single-box2 button,
-.landing-single-box3 button,
-.landing-single-box4 button{
-    background: #009306 !important;
-}
+
 
 
 
@@ -243,6 +239,11 @@ body{
     border-radius: 20px;
     margin-top: 50px;
     min-height: 280px;
+    cursor: pointer;
+    transition: .3s;
+}
+.landing-box:hover{
+    transform: scale(1.05);
 }
 .landing-box .box-body{
     min-height: 170px;
@@ -347,6 +348,20 @@ body{
     border-radius: 10px;
     display: inline-block;
     z-index: 1;
+}
+.single-amazing .duration{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    z-index: 9;
+    font-size: 14px;
+    align-items: center;
+}
+.single-amazing .duration i{
+    margin-right: 7px;
+    color: #fff;
 }
 .single-amazing::before{
     content: '';
