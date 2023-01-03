@@ -198,17 +198,22 @@ body{
 .landing-box-wraper{
     position: relative;
 }
-.landing-box-wraper::after{
-    content: '';
-    height: 80%;
-    width: 100%;
-    background-color: #F4E2E2;
-    position: absolute;
-    left: 0;
-    top: 25%;
-    z-index: -1;
-    border-radius: 10px;
+
+.landing-single-box2,
+.landing-single-box3,
+.landing-single-box4{
+    display: none;
 }
+.landing-single-box2 button,
+.landing-single-box3 button,
+.landing-single-box4 button{
+    background: #009306 !important;
+}
+
+
+
+
+
 .landing-infos p{
     margin-bottom: 5px;
 }
@@ -276,7 +281,7 @@ body{
 
 /* startup page slider */
 .landing-video-carousel{
-    background-color: #F4E2E2;
+    background-color: transparent;
     margin-top: 30px;
     padding: 30px;
     border-radius: 10px;
@@ -298,16 +303,61 @@ body{
     display: none;
 }
 .single-amazing{
-    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    
+    position: relative;
+    min-height: 300px;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+.single-amazing .fa-play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: #4C49E4;
+    z-index: 9;
+    display: none;
+    transition: .5s;
+    border: 3px solid #4C49E4;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.single-amazing:hover{
+    transform: scale(1.08);
+}
+.single-amazing:hover>.fa-play{
+    display: block;
 }
 .single-amazing .cover-img{
-    max-height: 200px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    border-radius: 10px;
     object-fit: cover;
+    border-radius: 10px;
+    display: inline-block;
+    z-index: 1;
+}
+.single-amazing::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    border-radius: 10px;
 }
 
 .single-amazing .price span{
@@ -315,11 +365,18 @@ body{
     margin-left: 3px;
 }
 .single-amazing .head{
-    font-weight: 700;
-    font-size: 17px;
-    color: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    color: #fff;
     margin-bottom: 5px;
     margin: 10px 0;
+    z-index: 3;
+    text-align: center;
+    font-weight: 500;
+    line-height: 180%;
 }
 
 
@@ -336,6 +393,7 @@ body{
     top: 82px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     display: none;
+    z-index: 9;
 }
 .mini-price .fa-caret-up{
     position: absolute;
