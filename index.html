@@ -373,16 +373,72 @@
                     </div>
                 </div>
 
-
-
-
-
             </div>
 
 
+        </div>
 
 
 
+        <!-- all videos popup -->
+        <div class="videos-popup-wraper">
+            <div class="videos-popup">
+
+                <div class="topbar">
+                    <div class="row m-0">
+                        <div class="col-md-9">
+                            <div class="title">
+                                <p class="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, placeat?</p>
+                                <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repellendus molestiae cupiditate unde nihil. Libero nisi ipsa impedit doloremque ipsam.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="skill">
+                                <a href="#">skills</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-section">
+                    <div class="row">
+                        <!-- <div class="col-md-7">
+                            <div class="current-video">
+                                <video controls>
+                                    <source src="vdo.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            
+                            <div class="d-flex align-content-center justify-content-between">
+                                <button class="btn prev control-btn"><i class="fas fa-long-arrow-alt-left mr-2"></i> Previous video</button>
+                                <button class="btn next control-btn">Next video <i class="fas fa-long-arrow-alt-right ml-2"></i></button>
+                            </div>
+                        </div> -->
+                        <div class="col-md-12">
+                            <div class="playlist">
+                                <a  href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a class="active" href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
         </div>
 
 
@@ -554,7 +610,6 @@
 
 
     // landing box toggle
-
     const box1 = document.querySelector('.landing-single-box1');
     const box2 = document.querySelector('.landing-single-box2');
     const box3 = document.querySelector('.landing-single-box3');
@@ -566,6 +621,40 @@
         box3.classList.toggle('show');
         box4.classList.toggle('show');
     })
+
+
+    // video popup
+    const videoPopupCloseBtn = document.querySelector('.video-section .close-btn');
+    const videoPopupWraper = document.querySelector('.videos-popup-wraper');
+
+    const singleAmazing = document.querySelectorAll('.single-amazing');
+
+    for(let i=0; i<singleAmazing.length; i++){
+        singleAmazing[i].addEventListener('click',()=>{
+            videoPopupWraper.style.cssText = 'display:block;';
+        })
+    }
+
+    videoPopupCloseBtn.addEventListener('click',()=>{
+        videoPopupWraper.style.cssText = 'display:none;';
+    })
+
+
+    const playListActive = document.querySelectorAll('.video-section .playlist a');
+
+    for(let i=0; i<playListActive.length; i++){
+        playListActive[i].addEventListener('click',(e)=>{
+            for(let j=0; j<playListActive.length; j++){
+                playListActive[j].classList.remove('active');
+            }
+            e.target.classList.add('active')
+        })
+    }
+
+
+
+
+
 
 </script>
 
