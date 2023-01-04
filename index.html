@@ -385,6 +385,7 @@
             <div class="videos-popup">
 
                 <div class="topbar">
+
                     <div class="row m-0">
                         <div class="col-md-9">
                             <div class="title">
@@ -394,27 +395,29 @@
                         </div>
                         <div class="col-md-3">
                             <div class="skill">
-                                <a href="#">skills</a>
+                                <a href="#">hi</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-section">
                     <div class="row">
-                        <!-- <div class="col-md-7">
+                        <div class="col-md-7">
                             <div class="current-video">
-                                <video controls>
+                                <!-- <video class="running-video" controls>
                                     <source src="vdo.mp4" type="video/mp4">
-                                </video>
+                                </video> -->
+                                <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
                             </div>
                             
                             <div class="d-flex align-content-center justify-content-between">
                                 <button class="btn prev control-btn"><i class="fas fa-long-arrow-alt-left mr-2"></i> Previous video</button>
                                 <button class="btn next control-btn">Next video <i class="fas fa-long-arrow-alt-right ml-2"></i></button>
                             </div>
-                        </div> -->
-                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-5">
                             <div class="playlist">
+                                
                                 <a  href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
                                 <a class="active" href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
                                 <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
@@ -436,7 +439,6 @@
                         </div>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -565,6 +567,8 @@
 
 <script>
 
+
+
     // sidebar active class toggle
     const sidebarList = document.querySelectorAll('.list');
     for(let i=0; i<sidebarList.length; i++){
@@ -621,6 +625,8 @@
         box3.classList.toggle('show');
         box4.classList.toggle('show');
     })
+
+
 
 
     // video popup
