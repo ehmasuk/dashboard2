@@ -334,13 +334,10 @@ a:hover{
     top: 50%;
     transform: translate(-50%,-50%);
     font-size: 40px;
-    color: #4C49E4;
+    color: #fff;
     z-index: 9;
     display: none;
     transition: .5s;
-    border: 3px solid #4C49E4;
-    border-radius: 10px;
-    padding: 10px;
 
 
 }
@@ -475,10 +472,10 @@ a:hover{
     margin: 15px 0 0 0;
     cursor: pointer;
     font-family: 'Gelasio', serif;
-    display: block;
+    display: inline-block;
     font-size: 18px;
     text-decoration: none;
-    color: #000;
+    color: #794EDA;
 }
 
 
@@ -687,12 +684,12 @@ a:hover{
     min-width: 180px;
 }
 .video-section .prev{
-    border: 1px solid #4C49E4;
-    color: #4C49E4;
+    border: 1px solid #794EDA;
+    color: #794EDA;
 }
 .video-section .next{
-    border: 1px solid #4C49E4;
-    background-color: #4C49E4;
+    border: 1px solid #794EDA;
+    background-color: #794EDA;
     color: #fff;
 }
 .video-section .current-video{
@@ -729,25 +726,37 @@ a:hover{
     border-radius: 0 0 10px 10px;
 }
 .video-section .playlist .active{
-    background-color: #4C49E4;
+    background-color: #794EDA;
     color: #fff;
     
 }
-/* .video-section .playlist::-webkit-scrollbar {
-    width: 20px;
+
+.video-popup-progress-card{
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ECEEF7;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 5px;
+    max-height: 42px;
 }
-.video-section .playlist::-webkit-scrollbar-track {
-    background-color: transparent;
+.video-popup-progress .info-user{
+    font-size: 14px;
 }
-.video-section .playlist::-webkit-scrollbar-thumb {
-    background-color: #d6dee1;
-    border-radius: 20px;
-    border: 6px solid transparent;
-    background-clip: content-box;
+.video-popup-progress .info-number{
+    font-size: 14px;
 }
-.video-section .playlist::-webkit-scrollbar-thumb:hover {
-    background-color: #a8bbbf;
-} */
+.video-popup-progress .progress .progress-bar{
+    background-color: #794EDA;
+}
+.video-popup-progress .progress{
+    height: 10px;
+}
+
+
+
+
+
 *::-webkit-scrollbar {
     width: 20px;
 }
@@ -761,5 +770,5 @@ a:hover{
     background-clip: content-box;
 }
 *::-webkit-scrollbar-thumb:hover {
-    background-color: #a8bbbf;
+    background-color: #794EDA;
 }
