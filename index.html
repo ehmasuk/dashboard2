@@ -14,6 +14,11 @@
         <!-- owl carousel -->
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+
+
+
         <title>Dashboard 2.0</title>
     </head>
     <body>
@@ -44,11 +49,11 @@
                                 <img src="https://escuela-ray-bolivar-sosa.com/newtheme/images/59f9b8d60fe1f-bpfull6fb4.jpg" alt="" class="img-fluid">
                                 <span>ehmasuk</span>
                                 <div class="drop-inner">
-                                    <a href="#"> <i class="fas fa-user"></i> Profile</a>
-                                    <a href="#"> <i class="fas fa-play-circle"></i> Videos</a>
-                                    <a href="#"> <i class="fas fa-money-bill"></i> Facturas</a>
-                                    <a href="#"> <i class="fas fa-award"></i> Certificados</a>
-                                    <a href="#"> <i class="far fa-heart"></i> Lista de deseos</a>
+                                    <a href="#" id="profile-content-btn"> <i class="fas fa-user"></i> Profile</a>
+                                    <a href="#" id="video-content-btn"> <i class="fas fa-play-circle"></i> Videos</a>
+                                    <a href="#" id="facturas-content-btn"> <i class="fas fa-money-bill"></i> Facturas</a>
+                                    <a href="#" id="certificates-content-btn"> <i class="fas fa-award"></i> Certificados</a>
+                                    <a href="#" id="lista-de-content-btn"> <i class="far fa-heart"></i> Lista de deseos</a>
                                 </div>
                             </div>
 
@@ -275,7 +280,7 @@
 
 
 
-
+<!-- kaj -->
                     <div class="col-md-9 ml-auto" style="transition: 1s !important;">
                         <div class="landing-video-carousel">
                             <div class="keywords">
@@ -283,10 +288,12 @@
                                 <span>Intermedio</span>
                                 <span>Avanzado</span>
                             </div>
+
+
                             <div class="carousel-section owl-carousel" style="border-radius: 10px;backdrop-filter: blur(50px);background-color: #00000014;">
         
                                 <div class="p-3">
-                                    <div class="single-amazing">
+                                    <div class="single-amazing" onclick="openPop()">
                                         <div class="duration">
                                             <i class="fas fa-video"></i>
                                             <span>8 hours</span>
@@ -297,7 +304,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3">
-                                    <div class="single-amazing">
+                                    <div class="single-amazing" onclick="openPop()">
                                         <div class="duration">
                                             <i class="fas fa-video"></i>
                                             <span>8 hours</span>
@@ -308,7 +315,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3">
-                                    <div class="single-amazing">
+                                    <div class="single-amazing" onclick="openPop()">
                                         <div class="duration">
                                             <i class="fas fa-video"></i>
                                             <span>8 hours</span>
@@ -319,7 +326,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3">
-                                    <div class="single-amazing">
+                                    <div class="single-amazing" onclick="openPop()">
                                         <div class="duration">
                                             <i class="fas fa-video"></i>
                                             <span>8 hours</span>
@@ -330,7 +337,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3">
-                                    <div class="single-amazing">
+                                    <div class="single-amazing" onclick="openPop()">
                                         <div class="duration">
                                             <i class="fas fa-video"></i>
                                             <span>8 hours</span>
@@ -342,6 +349,11 @@
                                 </div>
         
                             </div>
+
+
+
+
+
                         </div>
                     </div>
 
@@ -989,9 +1001,552 @@
             </div>
 
 
+
+
+
+
             <!-- AFILIACION -->
+            <div class="affiliate-content single-content">
+                <div class="info-bar">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="img-fluid profile-img">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-4 pl-0">
+                                    <p class="name">eh masuk</p>
+                                </div>
+                                <div class="col-4"></div>
+                                <div class="col-4">
+                                    Ganado
+                                    <p>$0</p>
+                            </div>
+                            </div>
+                            <div class="row py-3 title">
+                                <p>Afiliado desde: Nov 19, 2021</p>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-4 pl-0">
+                                    <p class="btm-title">Total de nuevos afiliados <br> conseguidos por el enlace</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="btm-title">Pagos realizadoss</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="btm-title">Pendiente de pago</p>
+                                    <p>0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aff-share-bar">
+                    <div class="row">
+                        <div class="col-md-4 pl-0">
+                            <div class="aff-card-share" style="background-image: url(https://escuela-ray-bolivar-sosa.com/new_img/images/one.jpg);">
+                                <p class="title">Enlace para compartir</p>
+                                <p class="link">https://escuela-ray-bolivar-sosa.com/signup?refferal_code=2689C5DF</p>
+                                <div class="aff-share-btns">
+                                    <button class="btn mr-3">Copiar enlace</button>
+                                    <button class="btn"><i class="fas fa-share-alt mr-2"></i> Compartir</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="aff-card-share" style="background-image: url(https://escuela-ray-bolivar-sosa.com/new_img/images/two.jpg);">
+                                <input class="invite-int" type="text" placeholder="xyz@example.com">
+                                <input class="btn invite-btn" type="submit" value="Invitar a amigos">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="aff-card-share aff-three pr-0">
+                                <p><strong>&iquest;CU&Aacute;NTO GANAR&Eacute;?</strong></p>
+                                
+                                <p>Ganar&aacute;s el 80% de lo que un nuevo alumno gaste en su primera compra. Ej. Si un alumno gasta 39.99&euro; <strong>ganar&aacute;s 30&euro;.</strong> Si gasta 68&euro; ganar&aacute;s 51&euro;. *Solo por el primer pago.&nbsp;</p>
+                                
+                                <p>&nbsp;</p>
+                                
+                                <p><strong>&iquest;CU&Aacute;NDO ME PAGAR&Aacute;N?</strong></p>
+                                
+                                <p>Entre el d&iacute;a 30 y el d&iacute;a 5 del mes siguiente recibir&aacute;s tus ingresos en Paypal. *Recuerda que el primer paso es escribir tu email para que podamos hacer los pagos.</p>
+                                
+                                <p>&nbsp;</p>
+                                
+                                <p><strong>&iquest;C&Oacute;MO PUEDO EXPLOTAR AL M&Aacute;XIMO EL PROGRAMA?</strong></p>
+                                
+                                <p>Puedes utilizar varias t&eacute;cnicas para tener un mejor impacto entre tus seguidores. A continuaci&oacute;n, explicamos dos muy efectivas, escribe un art&iacute;culo en el que expliques las ventajas de los cursos que ofrece la escuela y deja claro que si hacen la compra desde tu enlace, conseguir&aacute;n un descuento.</p>
+                                
+                                <p>&nbsp;</p>
+                                
+                                <p><strong>CONSIGUE M&Aacute;S DINERO (consigue el 50% de lo que paguen los alumnos para siempre)</strong></p>
+                                
+                                <p>Compartir tu enlace en las redes o por Whats App entre tus amigos puede funcionar, pero &iquest;qu&eacute; pasa si utilizas t&eacute;cnicas m&aacute;s estrat&eacute;gicas?</p>
+                                
+                                <p>Si te conviertes en embajador de la marca podr&aacute;s ganar de manera pasiva, el 50% de lo que paguen los alumnos cada mes. *Necesitas realizar al menos tres ventas para convertirte en embajador.</p>
+                                
+                                <p>&nbsp;</p>
+                                
+                                <p><strong>OPCIONES M&Aacute;S BENEFICIOSAS PARA VENDER LOS CURSOS DE LA ESCUELA</strong></p>
+                                
+                                <ol>
+                                    <li>Crea un art&iacute;culo en tu blog explicando las ventajas de la escuela. No olvides mencionar el taller de escritura. Sesiona gratis los 3 primeros martes de cada mes.</li>
+                                </ol>
+                                
+                                <p><strong>VENTAJAS DE LA ESCUELA </strong></p>
+                                
+                                <ol>
+                                    <li>Precios econ&oacute;micos. Desde 14.99&euro; hasta 68&euro;/cada mes.</li>
+                                    <li>Profesor con m&aacute;s de 15 a&ntilde;os de experiencia.</li>
+                                    <li>Alumnos con premios, un finalista del Premio Planeta 2021.</li>
+                                    <li>Taller gratuito para escribir una novela memorable los 3 primeros martes de cada mes para que los alumnos prueben el servicio el tiempo que deseen.</li>
+                                    <li>M&aacute;s de 30 cursos con todos los contenidos necesarios para escribir una novela memorable.</li>
+                                    <li>Chat en la escuela y grupo de Facebook para preguntar dudas.</li>
+                                    <li>V&iacute;deos con las charlas disponibles de la escuela cada semana. <a href="https://www.youtube.com/watch?v=aCLqASvkiJI">Haz clic aqu&iacute;.</a></li>
+                                    <li>Publicaci&oacute;n (gratuita) a final de a&ntilde;o de una antolog&iacute;a con los mejores relatos de los narradores.</li>
+                                    <li>Charlas de destacados narradores. <a href="https://www.youtube.com/watch?v=yAf1VQkejvU">Haz clic aqu&iacute;.</a></li>
+                                    <li>Tutor&iacute;as personalizadas por chat o email.</li>
+                                    <li>Seguimiento personalizado durante la formaci&oacute;n con lecciones extra. <a href="https://www.youtube.com/watch?v=PKfXOJVrElM">Haz clic aqu&iacute;.</a></li>
+                                    <li>Herramienta de creaci&oacute;n de personajes.</li>
+                                </ol>
+                                
+                                <p>Consulta todas las herramientas de la escuela en este v&iacute;deo. <a href="https://www.youtube.com/watch?v=vI8VKBCoVZA">Haz clic aqu&iacute;.</a></p>
+                                
+                                <p><strong>Importante</strong></p>
+                                
+                                <p>La escuela ofrece 4 suscripciones (opci&oacute;n de 39.99&euro; y 68&euro;/mensuales durante 24 meses) que permiten el acceso a todos los cursos. La &uacute;nica diferencia es que la opci&oacute;n de 68&euro; da acceso a encuentros personalizados cada 2 semanas. Adem&aacute;s, los escritores tambi&eacute;n reciben ayuda para organizar y escribir su novela mientras tengan la suscripci&oacute;n activa.</p>
+                                
+                                <p><strong>Suscripci&oacute;n de 29.99&euro; y de 14.99&euro;</strong></p>
+                                
+                                <p>La opci&oacute;n de 29.99&euro; brinda acceso a todos los cursos. Sin embargo, el alumno no contar&aacute; con la gu&iacute;a de un experto para indicarle el curso que debe seguir. En cualquier caso, s&iacute; recibir&aacute; apoyo v&iacute;a email o por chat.</p>
+                                
+                                <p>La opci&oacute;n de 14.99&euro; te brinda acceso a las charlas grabadas (no a los cursos). Tambi&eacute;n podr&aacute;n acceder a las lecciones premium (las clases por videoconferencia) que tienen lugar los mi&eacute;rcoles y jueves.</p>
+                                
+                                <p><strong>OFERTA</strong> <strong>GANA 349&euro;</strong> (para embajadores de la escuela)</p>
+                                
+                                <p>*Es necesario haber realizado al menos 3 ventas para acceder a esta opci&oacute;n.</p>
+                                
+                                <p>Esta oferta est&aacute; disponible solo a trav&eacute;s del sistema de afiliados, con lo cual, tienes una ventaja importante.</p>
+                                
+                                <p>Los usuarios que compren esta oferta tendr&aacute;n acceso a todos los cursos para siempre con un &uacute;nico pago de 699&euro;. El alumno ahorra 260&euro; (acceder&aacute;n a la suscripci&oacute;n de 39.99&euro;)</p>
+                                
+                                <p>En este caso ganar&aacute;s 349&euro;.</p>
+                                
+                                <p><strong>OFERTA GANA EL 50% DE LA SUSCRIPCI&Oacute;N MIENTRAS LOS ALUMNOS PAGUEN </strong></p>
+                                
+                                <p>Para acceder a esta opci&oacute;n env&iacute;a un email a <a href="mailto:info@ray-bolivar-sosa.es">info@ray-bolivar-sosa.es</a> No olvides agregar tu What s up para contactar contigo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
             <!-- SUBSCRIPCION-->
+            <div class="subscription-content  single-content">
+                <div class="row">
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sub-inner">
+                            <div class="title">
+                                <h3>€ 39.99 / mes</h3>
+                            </div>
+                            <p class="des">Ideal para escritores principiantes. Guía personalizada, técnicas narrativas. Sugerencias para optimizar tu novela (nivel intermedio).</p>
+                            <div class="price-text">
+                                <span>€ 39.99 /</span>
+                                Mes durante 24 meses
+                            </div>
+                            <button class="sub-btn btn">Seleccionar plan</button>
+                            <div class="benefits">
+                                <p>Beneficios:</p>
+                                <ul>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Tutorías y correcciones personalizadas por email</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sub-inner">
+                            <div class="title">
+                                <h3>€ 39.99 / mes</h3>
+                            </div>
+                            <p class="des">Ideal para escritores principiantes. Guía personalizada, técnicas narrativas. Sugerencias para optimizar tu novela (nivel intermedio).</p>
+                            <div class="price-text">
+                                <span>€ 39.99 /</span>
+                                Mes durante 24 meses
+                            </div>
+                            <button class="sub-btn btn">Seleccionar plan</button>
+                            <div class="benefits">
+                                <p>Beneficios:</p>
+                                <ul>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Tutorías y correcciones personalizadas por email</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sub-inner">
+                            <div class="title">
+                                <h3>€ 39.99 / mes</h3>
+                            </div>
+                            <p class="des">Ideal para escritores principiantes. Guía personalizada, técnicas narrativas. Sugerencias para optimizar tu novela (nivel intermedio).</p>
+                            <div class="price-text">
+                                <span>€ 39.99 /</span>
+                                Mes durante 24 meses
+                            </div>
+                            <button class="sub-btn btn">Seleccionar plan</button>
+                            <div class="benefits">
+                                <p>Beneficios:</p>
+                                <ul>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Tutorías y correcciones personalizadas por email</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sub-inner">
+                            <div class="title">
+                                <h3>€ 39.99 / mes</h3>
+                            </div>
+                            <p class="des">Ideal para escritores principiantes. Guía personalizada, técnicas narrativas. Sugerencias para optimizar tu novela (nivel intermedio).</p>
+                            <div class="price-text">
+                                <span>€ 39.99 /</span>
+                                Mes durante 24 meses
+                            </div>
+                            <button class="sub-btn btn">Seleccionar plan</button>
+                            <div class="benefits">
+                                <p>Beneficios:</p>
+                                <ul>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Tutorías y correcciones personalizadas por email</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
             <!-- SETTING -->
+
+
+
+
+
+
+            <!-- dropdown contents -->
+            <!-- dropdown contents -->
+            <!-- dropdown contents -->
+            <!-- dropdown contents -->
+
+
+            <!-- Videos content -->
+            <div class="video-content single-content">
+                <div class="row">
+                    <div class="col-12 video-bar">
+                        <a href="#">category</a>
+                        <a href="#">category</a>
+                        <a href="#">category</a>
+                    </div>
+                    <div class="col-md-4 single-video">
+                        <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- profile content -->
+            <div class="profile-content single-content">
+                <section class="profile-header">
+                    <div class="container">
+                        <div class="profile-img-wraper">
+                            <div class="cover-img">
+                                <img src="https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="cover-img">
+                                <i class="fas fa-camera" data-toggle="tooltip" data-placement="right" title="Change Cover Photo" ></i>
+                            </div>
+                            <div class="profile-img">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="img-fluid">
+                                <div class="change-profile-img">
+                                    <i class="fas fa-camera" data-toggle="tooltip" data-placement="bottom" title="Change Profile Photo"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="info">
+                                <h2 class="name">John</h2>
+                                <div class="row px-3 justify-content-between align-items-center">
+                                    <div class="col-md">
+                                        <div class="follow justify-content-lg-start justify-content-center">
+                                            <p class="mr-3"><span>13</span>followers</p>
+                                            <p><span>16</span>following</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="join mb-3 mb-lg-0">
+                                            <span>@john</span> • Joined <span>Jan 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="social-links text-lg-right">
+                                            <a href="#" class="mr-3"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="mr-3"><i class="fab fa-youtube"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="nav-section">
+                    <div class="container">
+                        <div class="row px-4 justify-content-between">
+                            <a href="#">Histórico</a>
+                            <a href="#" class="active">Perfil</a>
+                            <a href="#">Conexiones <span>130</span></a>
+                            <a href="#">Grupos <span>13</span></a>
+                            <a href="#">Mis historias</a>
+                            <a href="#">Comunidad</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="profile-info">
+                    <div class="container">
+                        <div class="profile-content-info-wraper">
+                            <div class="title">
+                                <div class="row align-items-center justify-content-between">
+                                    <p>Información general</p>
+                                    <button class="btn edit-btn">Edit</button>
+                                </div>
+                            </div>
+                            <div class="content-infos">
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Nombre</div>
+                                    <div class="col main-info">John</div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Apellido</div>
+                                    <div class="col main-info">John</div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Seudónimo</div>
+                                    <div class="col main-info">John</div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Fecha de nacimiento</div>
+                                    <div class="col main-info">John</div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Género</div>
+                                    <div class="col main-info">John</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-content-info-wraper">
+                            <div class="title">
+                                <div class="row align-items-center justify-content-between">
+                                    <p>Work Experience</p>
+                                    <button class="btn edit-btn">Edit</button>
+                                </div>
+                            </div>
+                            <div class="content-infos">
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Company Name</div>
+                                    <div class="col main-info">Manager</div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Job Title</div>
+                                    <div class="col main-info">Manager</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-content-info-wraper">
+                            <div class="title">
+                                <div class="row align-items-center justify-content-between">
+                                    <p>Biography</p>
+                                    <button class="btn edit-btn">Edit</button>
+                                </div>
+                            </div>
+                            <div class="content-infos">
+                                <div class="row mt-4">
+                                    <div class="col-3 p-0 tag">Biography</div>
+                                    <div class="col main-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum facilis excepturi iste voluptas officiis quibusdam corporis labore laudantium nostrum quas.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <!-- facturas content -->
+            <div class="facturas-content single-content">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr No.</th>
+                            <th scope="col">Order Date</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>100</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>19</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>34</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Larry</td>
+                            <td>60</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <!--  Lista de deseos -->
+            <div class="lista-de-content single-content">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr No.</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <!--  certificates -->
+            <div class="certificates-content single-content">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr No.</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>1001</td>
+                            <td>La teoría del iceberg</td>
+                            <td><button class="btn btn-primary btn-sm mr-3">View</button><button class="btn btn-success btn-sm">Download</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>1002</td>
+                            <td>La teoría del iceberg</td>
+                            <td><button class="btn btn-primary btn-sm mr-3">View</button><button class="btn btn-success btn-sm">Download</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>1003</td>
+                            <td>La teoría del iceberg</td>
+                            <td><button class="btn btn-primary btn-sm mr-3">View</button><button class="btn btn-success btn-sm">Download</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>1004</td>
+                            <td>La teoría del iceberg</td>
+                            <td><button class="btn btn-primary btn-sm mr-3">View</button><button class="btn btn-success btn-sm">Download</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
 
 
             <!-- coming soon -->
@@ -1094,16 +1649,26 @@
                                 </div>
                                 <div>
                                     <div class="video-popup-progress-card d-flex align-items-center justify-content-between">
-                                        <img src="img/ff.png" alt="" class="img-fluid">
+                                        <img src="icons-fire.gif" alt="" class="img-fluid">
                                         <p>4 días</p>
                                         <p>Ganar el reto</p>
                                     </div>
-    
                                     <div class="video-popup-progress-card d-flex align-items-center justify-content-between">
-                                        <img src="img/32.png" alt="" class="img-fluid">
+                                        <img src="icons8-fire.gif" alt="" class="img-fluid">
                                         <p>4 días</p>
                                         <p>Ganar el reto</p>
                                     </div>
+                                    <div class="video-popup-progress-card d-flex align-items-center justify-content-between">
+                                        <img style="max-width: 50px;" src="diamond.gif" alt="" class="img-fluid">
+                                        <p>4 días</p>
+                                        <p>Ganar el reto</p>
+                                    </div>
+                                    <div class="video-popup-progress-card d-flex align-items-center justify-content-between">
+                                        <img src="icons8-diamond-heart.gif" alt="" class="img-fluid">
+                                        <p>4 días</p>
+                                        <p>Ganar el reto</p>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -1358,17 +1923,14 @@
     const videoPopupCloseBtn = document.querySelector('.video-section .close-btn');
     const videoPopupWraper = document.querySelector('.videos-popup-wraper');
 
-    const singleAmazing = document.querySelectorAll('.single-amazing');
-
-    for(let i=0; i<singleAmazing.length; i++){
-        singleAmazing[i].addEventListener('click',()=>{
-            videoPopupWraper.style.cssText = 'display:block;';
-        })
+    const openPop = ()=>{
+        videoPopupWraper.style.cssText = 'display:block;';
     }
+
 
     videoPopupCloseBtn.addEventListener('click',()=>{
         videoPopupWraper.style.cssText = 'display:none;';
-    })
+    });
 
 
     const playListActive = document.querySelectorAll('.video-section .playlist a');
@@ -1432,18 +1994,53 @@
 
     // afiliacion
     listBtn[6].addEventListener('click',function (){
-        showContent('comming-soon-content')
+        showContent('affiliate-content')
     })
 
     // subscription
     listBtn[7].addEventListener('click',function (){
-        showContent('comming-soon-content')
+        showContent('subscription-content')
     })
 
     // settings
     listBtn[8].addEventListener('click',function (){
         showContent('comming-soon-content')
     })
+
+
+    // right dropdown
+    document.getElementById('video-content-btn').addEventListener('click',function (){
+        showContent('video-content')
+    })
+    document.getElementById('lista-de-content-btn').addEventListener('click',function (){
+        showContent('lista-de-content')
+    })
+    document.getElementById('certificates-content-btn').addEventListener('click',function (){
+        showContent('certificates-content')
+    })
+    document.getElementById('profile-content-btn').addEventListener('click',function (){
+        showContent('profile-content')
+    })
+    document.getElementById('facturas-content-btn').addEventListener('click',function (){
+        showContent('facturas-content')
+    })
+
+
+
+
+    // remove active class when click on dropdown items
+    const dropdownItems = document.querySelectorAll('.user-img-wraper .drop-inner>a');
+    const sidebarLinks= document.querySelectorAll('.new-sidebar ul li');
+    
+    for(let i =0; i<dropdownItems.length; i++){
+        dropdownItems[i].addEventListener('click',()=>{
+            for(let j=0; j<sidebarLinks.length; j++){
+                sidebarLinks[j].classList.remove('active');
+            }
+        })
+    }
+
+
 
 
 
@@ -1453,6 +2050,29 @@
 
 
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip() 
+        })
+</script> -->
+
+
+
 
 
 

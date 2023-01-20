@@ -42,7 +42,7 @@ a:hover{
 .new-sidebar{
     position: fixed;
     left: 0px;
-    top: 120px;
+    top: 80px;
     background-color: #794EDA;
     bottom: 20px;
     width: 70px;
@@ -306,7 +306,7 @@ a:hover{
     position: fixed;
     left: 10px;
     font-size: 25px;
-    top: 88px;
+    top: 27px;
     cursor: pointer;
 }
 
@@ -1272,6 +1272,17 @@ a:hover{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* MIS LIBROS CONTENT */
 /* MIS LIBROS CONTENT */
 /* MIS LIBROS CONTENT */
@@ -1298,6 +1309,9 @@ a:hover{
     margin-left: 10px;
 }
 
+
+
+
 /* puntos CONTENT */
 /* puntos CONTENT */
 /* puntos CONTENT */
@@ -1305,6 +1319,13 @@ a:hover{
 /* using previous design */
 
 
+
+
+
+/* coming soon */
+/* coming soon */
+/* coming soon */
+/* coming soon */
 /* coming soon */
 .comming-soon-content{
     height: 70vh;
@@ -1324,18 +1345,437 @@ a:hover{
 
 
 
-/* all contents */
-.dashboard-content{
-    display: none;
+/* video content */
+/* video content */
+/* video content */
+.video-content .video-bar{
+    background-color: #794EDA;
+    padding: 20px;
+    border-radius: 10px;
 }
-.objective-content{
-    display: none;
+.video-content .video-bar a{
+    text-transform: capitalize;
+    margin-right: 20px;
+    color: #fff;
 }
-.mis-libros-content{
-    display: none;
-}
-.puntos-content{
-    display: none;
+.video-content iframe{
+    width: 100%;
+    margin-top: 30px;
 }
 
+
+
+
+
+
+/* lista de content + certificates content + facturas content */
+/* lista de content + certificates content + facturas content */
+/* lista de content + certificates content + facturas content */
+/* lista de content + certificates content + facturas content */
+.lista-de-content .table-striped,
+.certificates-content .table-striped,
+.facturas-content .table-striped
+{
+    border-radius: 5px;
+    overflow: hidden;
+}
+.lista-de-content .table-striped tbody tr:nth-child(odd),
+.certificates-content .table-striped tbody tr:nth-child(odd),
+.facturas-content .table-striped tbody tr:nth-child(odd)
+{
+    background-color: #fff !important;
+}
+.lista-de-content .table-striped tbody tr:nth-child(even),
+.certificates-content .table-striped tbody tr:nth-child(even),
+.facturas-content .table-striped tbody tr:nth-child(even)
+{
+    background-color: rgba(120, 78, 218, 0.2) !important;
+}
+.lista-de-content .table-striped thead tr,
+.certificates-content .table-striped thead tr,
+.facturas-content .table-striped thead tr
+{
+    background-color: #794EDA !important;
+    color: #fff;
+    font-size: 20px;
+}
+.lista-de-content .table-striped thead tr th,
+.certificates-content .table-striped thead tr th,
+.facturas-content .table-striped thead tr th
+{
+    font-weight: 400 !important;
+    border: 0;
+}
+
+
+
+
+
+
+/* profile content */
+/* profile content */
+/* profile content */
+/* profile content */
+/* profile content */
+.profile-header .profile-img-wraper{
+    position: relative;
+    min-height: 450px;
+    width: 100%;
+    border: 1px solid rgba(224, 223, 219, 0.5);
+    border-radius: 0px 0px 10px 10px;
+    background-color: #fff;
+}
+.profile-header .profile-img-wraper .cover-img{
+    position: absolute;
+    top: 0;
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.profile-header .profile-img-wraper .profile-img{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+}
+.profile-header .profile-img-wraper .profile-img .change-profile-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: none;
+}
+.profile-header .profile-img-wraper .profile-img .change-profile-img i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 3;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile-header .profile-img-wraper .profile-img:hover>.change-profile-img{
+    display: block;
+}
+.profile-header .profile-img-wraper .cover-img i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #fff;
+    z-index: 3;
+    height: 35px;
+    width: 40px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 25px;
+    border-radius: 20%;
+    cursor: pointer;
+    display: none;
+}
+.profile-header .profile-img-wraper .cover-img:hover>i{
+    display: block;
+}
+.profile-header .profile-img-wraper .profile-img img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 3px;
+    object-fit: cover;
+}
+.profile-header .profile-img-wraper .info{
+    position: absolute;
+    top: 310px;
+    text-align: center;
+    width: 100%;
+}
+.profile-header .profile-img-wraper .info h2{
+    font-weight: 700;
+    color: #393e41;
+}
+.profile-header .profile-img-wraper .info .join{
+    color: #aaaaaa;
+}
+.profile-header .profile-img-wraper .info .follow p{
+    color: #aaaaaa;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.profile-header .profile-img-wraper .info .follow p span{
+    color: #393e41;
+    font-weight: 500;
+    margin-right: 7px;
+}
+.profile-header .profile-img-wraper .info .follow{
+    display: flex;
+    align-items: center;
+    color: #aaaaaa;
+}
+.profile-header .profile-img-wraper .info .social-links a{
+    background-color: #794EDA;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    line-height: 39px;
+}
+.profile-header .profile-img-wraper .info .social-links a i{
+    font-size: 17px;
+}
+.nav-section{
+    padding: 20px 0;
+}
+.nav-section a{
+    padding: 10px;
+    margin: 10px 0;
+}
+.nav-section a span{
+    display: inline-block;
+    background-color: #fbfaf9;
+    color: #393e41;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    min-width: 23px;
+    padding: 2px 6px 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-left: 5px;
+}
+.nav-section .active{
+    border-bottom: 3px solid #794EDA;
+    font-weight: 600;
+}
+.profile-content-info-wraper{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(224, 223, 219, 0.5);
+    margin-bottom: 30px;
+}
+.profile-content-info-wraper .title{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(224, 223, 219, 0.5);
+}
+.profile-content-info-wraper .title p{
+    font-weight: 600;
+    font-size: 22px;
+}
+.profile-content-info-wraper .title .edit-btn{
+    background-color: #FAF9F7;
+    border: 1px solid rgba(224, 223, 219, 0.3);
+    font-weight:500;
+    font-size: 18px;
+}
+.profile-content-info-wraper .content-infos{
+    text-transform: capitalize;
+    font-size: 17px;
+    
+}
+.profile-content-info-wraper .content-infos .tag{
+    color: #706e6e;
+    font-weight: 500;
+}
+.profile-content-info-wraper .content-infos .main-info{
+    font-weight: 500;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+/* subscription */
+/* subscription */
+/* subscription */
+.subscription-content .sub-inner{
+    border-radius: 5px;
+    border: 1px solid #794EDA;
+    padding: 20px;
+    transition: .3s;
+    margin-bottom: 50px;
+}
+.subscription-content .sub-inner:hover{
+    background: #F4F7F9;
+    transform: translateY(-10px);
+    box-shadow: 0px 13px 18px 2px rgba(120, 78, 218, 0.3);
+}
+.subscription-content .title h3{
+    font-weight: 600;
+    color: #794EDA;
+    text-align: center;
+}
+.subscription-content .des{
+    text-align: justify;
+    margin: 20px 0;
+}
+.subscription-content .sub-btn{
+    width: 100%;
+    background-color: #794EDA;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.subscription-content .price-text{
+    text-align: center;
+}
+.subscription-content .price-text span{
+    color: #794EDA;
+    font-size: 20px;
+    font-weight: 500;
+}
+.subscription-content .benefits p{
+    font-weight: 600;
+    font-size: 18px;
+}
+.subscription-content .benefits ul{
+    margin: 0;
+    padding-left: 20px;
+}
+.subscription-content .benefits ul li{
+    margin-top: 10px;
+}
+
+/* affiliate section */
+/* affiliate section */
+/* affiliate section */
+/* affiliate section */
+.affiliate-content {
+    max-width: 1200px;
+    margin: auto;
+}
+.affiliate-content .info-bar {
+    background-color: #794EDA;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.affiliate-content .info-bar .profile-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.affiliate-content .info-bar .title{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.affiliate-content .info-bar .name{
+    text-transform: capitalize;
+    font-size: 26px;
+}
+.affiliate-content .info-bar .btm-title{
+    min-height: 55px;
+}
+.affiliate-content .aff-share-bar .aff-card-share{
+    height: 480px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background-position: top;
+    background-size: cover;
+    margin-top: 30px;
+}
+.affiliate-content .aff-share-bar .aff-card-share .aff-share-btns button,
+.affiliate-content .aff-share-bar .aff-card-share .invite-btn{
+    background-color: #794EDA;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.affiliate-content .aff-share-bar .aff-card-share .title{
+    font-size: 18px;
+    font-weight: 600;
+    color: darkgray;
+    margin-bottom: 10px;
+}
+.affiliate-content .aff-share-bar .aff-card-share .link{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+.affiliate-content .aff-share-bar .aff-card-share .invite-int{
+    width: 100%;
+    border: 1px solid #e4e7ea;
+    background-color: #fff;
+    line-height: 1.5;
+    color: #5c6873;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 5px;
+}
+.affiliate-content .aff-share-bar .aff-card-share .invite-btn{
+    margin-bottom: 5px;
+}
+.affiliate-content .aff-three{
+    display: block !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify !important;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 1px solid #c8ced3;
+    padding: 20px !important;
+}
+.affiliate-content .aff-three a{
+    color: blue;
+}
+.affiliate-content .aff-three p{
+    margin-bottom: 10px;
+}
+.affiliate-content .aff-three ol{
+    padding-left: 0;
+    list-style-position: inside;
+}
+.affiliate-content .aff-three ol li{
+    margin-bottom: 5px;
+}
+
+
+
+/* all contents */
+.dashboard-content,
+.certificates-content,
+.objective-content,
+.mis-libros-content,
+.puntos-content,
+.video-content,
+.lista-de-content,
+.profile-content,
+.subscription-content,
+.affiliate-content,
+.facturas-content
+{
+    display: none;
+}
 
